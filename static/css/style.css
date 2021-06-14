@@ -66,7 +66,7 @@ nav ul li a:hover{
 .content{
     max-width: 650px;
     color: #fff;
-    margin-top: 15%;
+    margin-top: 7%;
 }
 
 h3{
@@ -165,12 +165,13 @@ span{
 .social-link{
     width: 80px;
     position: absolute;
-    bottom: 20px;
+    bottom: 40px;
 }
 
 
 
 .social-link img{
+    width: 20px;
     height: 15px;
     display: block;
     margin: 25px auto;
