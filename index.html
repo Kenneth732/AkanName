@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="static/css/style.css">
+</head>
+
+<body>
+  <div class="header">
+    <div class="container-box">
+      <div class="navbar">
+        <img src="./static/images/logo.png" class="logo">
+        <nav>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </nav>
+        <img src="./static/images/user.png" class="user-icon">
+      </div>
+      <div class="content">
+        <div class="container">
+          <div class="jumbotron">
+            <h1>The <span>Akan</span> names system!</h1>
+          </div>
+
+          <div class="row">
+            <h2>Everything You Need to Know About the Ghanaian Tradition of Day Names</h2>
+            <div class="col-md-6">
+
+
+              <p>The Akan people use the Kwa language group’s system of timekeeping, which is based on a six-day week
+                (‘nnanson‘), with the seventh day inclusive. In Ashanti homes, Sunday-born males and females are named
+                Kwasi or Kwesi and Akosua respectively (meaning ‘associated with the universe’); Monday-born are Kwadwo
+                or Kojo, Adjoa or Adwoa (meaning ‘associated with peace’);</p>
+            </div>
+            <div class="col-md-6">
+              <p>Tuesday-born are Kwabena or Kobi, Abena (meaning ‘associated with the ocean’); Wednesday-born Kwaku or
+                Kweku, Akua (meaning ‘associated with spider/Ananse’); Thursday-born Yaw, Yaa ( meaning ‘associated with
+                the earth’); Friday-born Kofi, Afia or Afua (meaning ‘associated with fertility’); and Saturday-born
+                Kwame, Ama (meaning ‘associated with God’).</p>
+            </div>
+          </div>
+          <div class="overlay">
+            <div class="container">
+              <h2>Enter Your Details Here!</h2>
+              <form name="myForm" class="form" onsubmit="return getAkanName()">
+                <div class="form-group">
+                  <label for="cent">Century:</label>
+                  <input type="number" class="form-control-one" id="cent"
+                    placeholder="century of Birth Eg 21 if born in 2000s" name="cent" required>
+                </div>
+                <div class="form-group">
+                  <label for="year-of-birth">Year of Birth:</label>
+                  <input type="number" class="form-control-two" id="year-input"
+                    placeholder="Year of Birth Eg: 2019 if born in 2019" name="year" required>
+                </div>
+                <div class="form-group">
+                  <label for="month-of-birth">Month of Birth:</label>
+                  <input type="number" class="form-control-three" id="month-input" placeholder="Month of Birth" name="month"
+                    required>
+                </div>
+                <div class="form-group">
+                  <label for="date-of-birth">Date of Birth:</label>
+                  <input type="number" class="form-control-two" id="day-input" placeholder="Date of Birth eg 05 for May"
+                    name="date" required>
+                </div>
+                <div class="form-group">
+                  <label for="gender">
+                    <p>Select your gender: </p>
+                    Male
+                    <input id="male-input" type="radio" name="gender" value="male" required>
+                    Female
+                    <input id="female-input" type="radio" name="gender" value="female" required>
+
+                  </label>
+                </div>
+                <br>
+                <input id="get-name" type="submit" name="" value="Generate name">
+                <br>
+              </form>
+              <form onsubmit="return clearInput()">
+                <input class="get-name" type="submit" value="Clear input">
+                <br><br>
+                <h4 id=display-name><strong>Your Akan name is:</strong></h4>
+                <p id="result"></p>
+                <br>
+                <br>
+            </div>
+          </form>
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+        Copyright © 2021: Kenneth Mburu
+      </div>
+      <script src="static/js/app.js"></script>
+</body>
+
+</html>
