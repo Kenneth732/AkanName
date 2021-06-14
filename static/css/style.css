@@ -149,17 +149,16 @@ span{
 
 .sidebar{
     width: 80;
-    height: ;
-}
-
-
-.footer{
-    float: right;
     height: 100vh;
     background: #000;
     position: absolute;
     top: 0;
     left: 0;
+}
+
+
+.footer{
+    float: right;
 }
 
 
